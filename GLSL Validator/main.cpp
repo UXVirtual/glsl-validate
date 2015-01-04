@@ -108,6 +108,9 @@ int main(int argc, char ** argv)
     const char* const ProgramText = ProgramTextString.c_str();
     Program = glCreateShaderProgramv(Parameters.profile, 1, &ProgramText);
     int ReturnValue = 0;
+    
+    
+    
     if(!program_is_valid(Program))
     {
         cout << "FAIL\n";
@@ -116,7 +119,16 @@ int main(int argc, char ** argv)
         char InfoLog[MaximumInfoLogLength] = {};
         GLsizei ActualInfoLogLength = 0;
         glGetProgramInfoLog(Program, MaximumInfoLogLength, &ActualInfoLogLength, InfoLog);
+        
+        
+        cout << "OpenGL version supported by this platform:\n";
+        cout << glGetString(GL_VERSION);
+        //cout << "\n";
+        //cout << glGetString(GL_EXTENSIONS);
+        cout << "\n";
         cout << "Info Log:\n";
+        
+
         cout << InfoLog;
     }
     else
