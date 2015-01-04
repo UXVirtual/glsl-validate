@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30C471116F3CBA70038B426 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30C471016F3CBA70038B426 /* main.cpp */; };
+		A30C471316F3CBA80038B426 /* GLSL_Validator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A30C471216F3CBA80038B426 /* GLSL_Validator.1 */; };
+		A30C471C16F3D9B00038B426 /* opengl_context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A30C471916F3D9B00038B426 /* opengl_context.cpp */; };
+		A30C471D16F3D9B00038B426 /* opengl_context.mm in Sources */ = {isa = PBXBuildFile; fileRef = A30C471B16F3D9B00038B426 /* opengl_context.mm */; };
+		A30C472B16F3EE1F0038B426 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30C472A16F3EE1F0038B426 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A30C470B16F3CBA70038B426 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				A30C471316F3CBA80038B426 /* GLSL_Validator.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4CA9D24B1A58E7E4008121D6 /* cli_parser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cli_parser.hpp; sourceTree = "<group>"; };
+		A30C470D16F3CBA70038B426 /* glsl-validate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "glsl-validate"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30C471016F3CBA70038B426 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A30C471216F3CBA80038B426 /* GLSL_Validator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GLSL_Validator.1; sourceTree = "<group>"; };
+		A30C471916F3D9B00038B426 /* opengl_context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opengl_context.cpp; sourceTree = "<group>"; };
+		A30C471A16F3D9B00038B426 /* opengl_context.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = opengl_context.hpp; sourceTree = "<group>"; };
+		A30C471B16F3D9B00038B426 /* opengl_context.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opengl_context.mm; sourceTree = "<group>"; };
+		A30C472A16F3EE1F0038B426 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30C470A16F3CBA70038B426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30C472B16F3EE1F0038B426 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CA9D24A1A58E7E4008121D6 /* twisted_works */ = {
+			isa = PBXGroup;
+			children = (
+				4CA9D24B1A58E7E4008121D6 /* cli_parser.hpp */,
+			);
+			path = twisted_works;
+			sourceTree = "<group>";
+		};
+		A30C470416F3CBA70038B426 = {
+			isa = PBXGroup;
+			children = (
+				A30C472A16F3EE1F0038B426 /* OpenGL.framework */,
+				A30C470F16F3CBA70038B426 /* GLSL Validator */,
+				A30C470E16F3CBA70038B426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A30C470E16F3CBA70038B426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30C470D16F3CBA70038B426 /* glsl-validate */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30C470F16F3CBA70038B426 /* GLSL Validator */ = {
+			isa = PBXGroup;
+			children = (
+				4CA9D24A1A58E7E4008121D6 /* twisted_works */,
+				A30C471A16F3D9B00038B426 /* opengl_context.hpp */,
+				A30C471916F3D9B00038B426 /* opengl_context.cpp */,
+				A30C471B16F3D9B00038B426 /* opengl_context.mm */,
+				A30C471016F3CBA70038B426 /* main.cpp */,
+				A30C471216F3CBA80038B426 /* GLSL_Validator.1 */,
+			);
+			path = "GLSL Validator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30C470C16F3CBA70038B426 /* GLSL Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30C471616F3CBA80038B426 /* Build configuration list for PBXNativeTarget "GLSL Validator" */;
+			buildPhases = (
+				A30C470916F3CBA70038B426 /* Sources */,
+				A30C470A16F3CBA70038B426 /* Frameworks */,
+				A30C470B16F3CBA70038B426 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GLSL Validator";
+			productName = "GLSL Validator";
+			productReference = A30C470D16F3CBA70038B426 /* glsl-validate */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30C470516F3CBA70038B426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Sherief Farouk";
+			};
+			buildConfigurationList = A30C470816F3CBA70038B426 /* Build configuration list for PBXProject "GLSL Validator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A30C470416F3CBA70038B426;
+			productRefGroup = A30C470E16F3CBA70038B426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30C470C16F3CBA70038B426 /* GLSL Validator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30C470916F3CBA70038B426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30C471116F3CBA70038B426 /* main.cpp in Sources */,
+				A30C471C16F3D9B00038B426 /* opengl_context.cpp in Sources */,
+				A30C471D16F3D9B00038B426 /* opengl_context.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A30C471416F3CBA80038B426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Include";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A30C471516F3CBA80038B426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Include";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A30C471716F3CBA80038B426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Lib\"",
+				);
+				PRODUCT_NAME = "glsl-validate";
+			};
+			name = Debug;
+		};
+		A30C471816F3CBA80038B426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Lib\"",
+				);
+				PRODUCT_NAME = "glsl-validate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30C470816F3CBA70038B426 /* Build configuration list for PBXProject "GLSL Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30C471416F3CBA80038B426 /* Debug */,
+				A30C471516F3CBA80038B426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30C471616F3CBA80038B426 /* Build configuration list for PBXNativeTarget "GLSL Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30C471716F3CBA80038B426 /* Debug */,
+				A30C471816F3CBA80038B426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30C470516F3CBA70038B426 /* Project object */;
+}
